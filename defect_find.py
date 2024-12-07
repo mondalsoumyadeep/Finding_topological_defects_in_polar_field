@@ -59,8 +59,8 @@ def find_defects(phi, phi0=0.8 * (2 * np.pi)):
 
 
 # Load x and y components of the polar field
-nx = np.loadtxt("nx_100000.txt")
-ny = np.loadtxt("ny_100000.txt")
+nx = np.loadtxt("nx_data.txt")
+ny = np.loadtxt("ny_data.txt")
 phi = np.arctan2(ny, nx)  # Compute the angle (phase) field from the components
 
 # Find defects in the polar field
